@@ -1,3 +1,11 @@
+## FORK
+
+This fork allows using the language server in `language-server/` as an LSP server outside the
+VSCode extension. You can install it by `npm install -g ./language-server` from repo root and
+you will get a `ue-angelscript-ls` binary on `PATH` via npm.
+
+## ORIGINAL
+
 Language Server and Debug Adapter for use with the UnrealEngine-Angelscript plugin from https://angelscript.hazelight.se
 
 ## Getting Started
