@@ -314,7 +314,7 @@ connection.onInitialize((_params): InitializeResult => {
 
     const initializationOptions = _params.initializationOptions as { additionalScriptRootFolders?: WorkspaceFolder[] } | undefined;
 
-    for (let scriptRootPath of initializationOptions.additionalScriptRootFolders) {
+    for (let scriptRootPath of initializationOptions?.additionalScriptRootFolders ?? []) {
         let uri = decodeURIComponent(scriptRootPath.uri);
         if (!RootUris.includes(uri)) {
             Roots.push(URI.parse(scriptRootPath.uri).fsPath);
